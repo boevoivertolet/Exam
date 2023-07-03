@@ -4831,22 +4831,21 @@
 //
 // // ❗ Типизировать ошибку не надо, т.к. там есть много нюансов, о которых вы узнаете позже*/ // 3 неделя
 
-// import { useFormik } from 'formik';
+// import {useFormik} from 'formik';
 //
 // import React from 'react'
 //
-// import { Provider, TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+// import {Provider, TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
 //
 // import ReactDOM from 'react-dom/client';
 //
-// import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
+// import {BrowserRouter, Navigate, Route, Routes, useNavigate} from 'react-router-dom'
 //
 // import axios from 'axios';
 //
-// import { applyMiddleware, combineReducers, legacy_createStore as createStore } from 'redux';
+// import {applyMiddleware, combineReducers, legacy_createStore as createStore} from 'redux';
 //
-// import thunk, { ThunkAction, ThunkDispatch } from 'redux-thunk';
-//
+// import thunk, {ThunkAction, ThunkDispatch} from 'redux-thunk';
 //
 //
 // // Types
@@ -4874,7 +4873,6 @@
 //     },
 //
 // }
-//
 //
 //
 // // Reducer
@@ -4933,7 +4931,6 @@
 //     | ReturnType<typeof setLoadingAC>
 //
 //     | ReturnType<typeof setError>
-//
 //
 //
 // // Thunk
@@ -4995,7 +4992,6 @@
 // const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 //
 //
-//
 // // Loader
 //
 // export const Loader = () => {
@@ -5054,31 +5050,34 @@
 //
 //         <div>
 //
-//             {!!error && <h2 style={{color: 'red'}}>{error}</h2>}
+//             {!!error && <h2 style = {{color: 'red'}}>{error}</h2>}
 //
-//             {isLoading && <Loader/>}
+//             {isLoading && <Loader />}
 //
-//             <form onSubmit={formik.handleSubmit}>
+//             {isLoggedIn && <Navigate to={'profile'}/>}
+//
+//
+//             <form onSubmit = {formik.handleSubmit}>
 //
 //                 <div>
 //
-//                     <input placeholder={'Введите email'}
+//                     <input placeholder = {'Введите email'}
 //
-//                            {...formik.getFieldProps('email')}/>
+//                            {...formik.getFieldProps('email')} />
 //
 //                 </div>
 //
 //                 <div>
 //
-//                     <input type={'password'}
+//                     <input type = {'password'}
 //
-//                            placeholder={'Введите пароль'}
+//                            placeholder = {'Введите пароль'}
 //
-//                            {...formik.getFieldProps('password')}/>
+//                            {...formik.getFieldProps('password')} />
 //
 //                 </div>
 //
-//                 <button type="submit">Залогиниться</button>
+//                 <button type = "submit">Залогиниться</button>
 //
 //             </form>
 //
@@ -5097,9 +5096,10 @@
 //
 //         <Routes>
 //
-//             <Route path={''} element={<Login/>}/>
+//             <Route path = {''} element = {<Login />} />
 //
-//             <Route path={'profile'} element={<Profile/>}/>
+//             <Route path = {'profile'} element = {<Profile />} />
+//
 //
 //         </Routes>
 //
@@ -5110,8 +5110,7 @@
 //
 // const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 //
-// root.render(<Provider store={store}><BrowserRouter><App/></BrowserRouter></Provider>)
-//
+// root.render(<Provider store = {store}><BrowserRouter><App /></BrowserRouter></Provider>)
 //
 //
 // // 📜 Описание:
@@ -5126,6 +5125,8 @@
 // // Напишите правильную строку кода
 //
 // // 🖥 Пример ответа:  console.log('If login => redirect to profile')
+// //
+// // ответ:  {isLoggedIn && <Navigate to={'profile'}/>}
 
 // import React, { useEffect } from 'react'
 //
@@ -5336,7 +5337,7 @@
 // // Ответ дайте через пробел.
 //
 // //
-// // 🖥 Пример ответа: 1 2 3 4 5 6 7 8 9 1 2
+// // 🖥 Пример ответа: 1 2 3 4 5 6 7 8 9 1 2 // xz
 
 // import React, { useEffect } from 'react'
 //
@@ -5365,7 +5366,7 @@
 //
 // const instance = axios.create({
 //
-//     baseURL: 'xxx'
+//     baseURL: 'https://exams-frontend.kimitsu.it-incubator.ru/api/'
 //
 // })
 //
@@ -5374,7 +5375,7 @@
 //
 //     getUsers() {
 //
-//         return instance.get('xxx')
+//         return instance.get('users')
 //
 //     }
 //
@@ -5403,13 +5404,13 @@
 //         case 'APP/SET-USERS':
 //
 //             /* 1 */
-//
+//             console.log('1')
 //             return {...state, users: action.users}
 //
 //         case 'APP/IS-LOADING':
 //
 //             /* 2 */
-//
+//             console.log('2')
 //             return {...state, isLoading: action.isLoading}
 //
 //         default:
@@ -5577,7 +5578,7 @@
 // // Ответ дайте через пробел.
 //
 //
-// // 🖥 Пример ответа: 1 2 3 4 5 6 7 8 9 10 1 2 3
+// // 🖥 Пример ответа: 1 2 3 4 5 6 7 8 9 10 1 2 3//xz
 
 // import React from 'react'
 //
@@ -5612,6 +5613,7 @@
 //
 //         <Routes>
 //
+//
 //             <Route path={'/'} element={<Main/>}/>
 //
 //
@@ -5638,6 +5640,8 @@
 //
 //
 // // 🖥 Пример ответа: <Route path={'/'} component={<Main/>}/>
+// //
+// //ответ:  root.render(<BrowserRouter><App/></BrowserRouter>)
 
 // import React from 'react'
 //
@@ -5692,7 +5696,7 @@
 //
 //
 //             {/* ❗❗❗ XXX ❗❗❗  */}
-//             <Route path={'*'} element={<Profile/>}/>
+//             <Route path={'*'} element={<Navigate to ={'profile'}/>}/>
 //         </Routes>
 //
 //     )
@@ -5708,7 +5712,7 @@
 //
 // // 📜 Описание:
 //
-// // Вместо ХХХ напишите роут таким образом, чтобы вне зависимости от того чтобы будет в урле (login или home или...)
+// // Вместо ХХХ напишите роут таким образом, чтобы вне зависимости от того что будет в урле (login или home или...)
 //
 // // вас всегда редиректило на страницу профиля и при в это в урле по итогу
 //
@@ -5716,6 +5720,8 @@
 //
 //
 // // 🖥 Пример ответа: <Route path={'/'} element={'to profile page'}/>
+// //
+// // ответ:  <Route path={'*'} element={<Navigate to ={'profile'}/>}/>
 
 // import { useFormik } from 'formik';
 //
@@ -5882,8 +5888,9 @@
 //
 // // Найдите в коде ошибку. Исправленную версию строки напишите в качестве ответа.
 //
-//
 // // 🖥 Пример ответа: <form onSubmit={formik.handleSubmit}>
+// //
+// // ответ: name="phone"
 
 // import { useFormik } from 'formik';
 //
@@ -5993,6 +6000,8 @@
 // // 🖥 Пример ответа: return errors.firstName = 'Must be 5 characters or more'
 //
 // // ❗ Сторонние библиотеки (например yup) использовать запрещено
+// //
+// // ответ: <button type="submit" disabled={!(formik.isValid && formik.values.firstName.length >5)}>Отправить</button>
 
 // import React from 'react'
 //
@@ -6052,6 +6061,8 @@
 //
 //
 // // 🖥 Пример ответа: type InitStateType = typeof initState
+// //
+// // ответ:    <Route path={'/'} element={<Main/>}/>
 
 // import { useFormik } from 'formik';
 //
@@ -6169,6 +6180,8 @@
 //
 //
 // // 🖥 Пример ответа: alert(JSON.stringify(values))
+// //
+// //ответ: onSubmit={formik.handleSubmit}
 
 // import { useFormik } from 'formik';
 //
@@ -6253,8 +6266,8 @@
 //
 //                 <input placeholder={'Введите email'}{...formik.getFieldProps('email')}/>
 //
+//
 //                 {getTrue() && <div style={{color: 'red'}}>ERROR</div>}
-//                 {/*{getTrue() && <div style={{color: 'red'}}>ERROR</div>}*/}
 //
 //             </div>
 //
@@ -6305,3 +6318,5 @@
 //
 //
 // // 🖥 Пример ответа: {true && <div style={{color: 'red'}}>error.email</div>}
+//
+// ответ: {formik.errors.email && <div style={{color: 'red'}}>ERROR</div>}
