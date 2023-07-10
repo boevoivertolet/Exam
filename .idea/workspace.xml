@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ca1af53-80b4-4b5e-8f3c-8f89f30302da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src-thursday/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-thursday/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src-thursday/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +61,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\exam" />
       <recent name="D:\Code\exam\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -75,7 +91,7 @@
       <workItem from="1688626015965" duration="484000" />
       <workItem from="1688626962570" duration="3440000" />
       <workItem from="1688994394251" duration="2870000" />
-      <workItem from="1688997320950" duration="5850000" />
+      <workItem from="1688997320950" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="создал проект для экзаменов">
       <created>1688120359948</created>
@@ -112,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688573947232</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="total done">
+      <created>1689005077326</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689005077326</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +148,7 @@
     <MESSAGE value="React-router-dom (ver. 6), formik fail" />
     <MESSAGE value="React-router-dom (ver. 6), formik проделал" />
     <MESSAGE value="total fail" />
-    <option name="LAST_COMMIT_MESSAGE" value="total fail" />
+    <MESSAGE value="total done" />
+    <option name="LAST_COMMIT_MESSAGE" value="total done" />
   </component>
 </project>
